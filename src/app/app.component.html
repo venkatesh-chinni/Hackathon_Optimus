@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <div class="container">
+    <a class="navbar-brand" href="#">Tap the white</a>
+    <span style="color:white"> <a href="#" >Help</a> </span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+</nav>
+
+<br><br>
+<div class="container">
+
+
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+      <div class="rightCol2" [style.background-color]="this.hackathon.colors[0]" (click)="this.hackathon.onClickTimer();onClick(this.hackathon.colors[0]);hackathon.shuffle(this.hackathon.colors);"></div>
+      <div class="rightCol1"  [style.background-color]="this.hackathon.colors[1]" (click)="this.hackathon.onClickTimer();onClick(this.hackathon.colors[1]);hackathon.shuffle(this.hackathon.colors);"></div>
+    </div>
+    <div class="col-3">
+      <div class="rightCol1"  [style.background-color]="this.hackathon.colors[2]" (click)="this.hackathon.onClickTimer();onClick(this.hackathon.colors[2]);hackathon.shuffle(this.hackathon.colors);"></div>
+      <div class="rightCol2"  [style.background-color]="this.hackathon.colors[3]" (click)="this.hackathon.onClickTimer();onClick(this.hackathon.colors[3]);hackathon.shuffle(this.hackathon.colors);"></div>
+    </div>
+    <div class="col-3"></div>
+</div>
+<br>
+<h3 class="text-center">Timer:
+    {{this.hackathon.hoursDisplay ? this.hackathon.hoursDisplay : '00'}} :
+    {{(this.hackathon.minutesDisplay) && (this.hackathon.minutesDisplay <= 59) ? this.hackathon.minutesDisplay : '00'}} :
+    {{(this.hackathon.secondsDisplay) && (this.hackathon.secondsDisplay <= 59) ? this.hackathon.secondsDisplay : '00'}} <br/>
+</h3>
+<br>
+<h3 class="text-center"  *ngIf="!this.hackathon.change">Score:{{score}}</h3>
+<h2 class="text-center" *ngIf="this.hackathon.change">Game Over. Your score is {{score}}.</h2>
+</div>
+<br><br>
+

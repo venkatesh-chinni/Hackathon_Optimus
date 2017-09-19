@@ -1,0 +1,66 @@
+.navbar{
+  margin-bottom: 30px;
+  text-align: center;
+}
+a:hover
+{
+	color: white;
+	text-decoration: none;
+}
+
+a
+{
+	color: white;
+}
+.navbar-brand
+{
+	text-align: center;
+}
+
+footer, footer .container{
+  background-color:#232323;
+  color: white;
+  font-size: 12px;
+  padding: 20px 0px;
+}
+
+.column_test{
+	position: relative;
+	clear: both;
+	top: 100px;
+	font-weight: 500;
+}
+body{
+	text-align: center;
+}
+
+.leftCol {
+	float: left;
+	width: 50%;
+    height: 300px;
+}
+
+.rightCol {
+	position: relative;
+	float: left;
+	width: 50%;
+}
+
+.rightCol1{
+	height: 150px;
+	border: 1px solid black;
+}
+.rightCol2 {
+	height: 150px;
+	border: 1px solid black;
+}
+
+.col-3{
+	margin: 0px;
+	padding: 10px 0px;
+	
+}
+body
+{
+	background-color: grey;
+}
