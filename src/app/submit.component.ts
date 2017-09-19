@@ -12,4 +12,7 @@ import { SubmitService } from './submit.service';
 export class SubmitComponent{
 
     constructor(private _submitservice:SubmitService){}
+    submitScore(name:string,email:string,location:string,ID:string){
+        
+    }
 }
