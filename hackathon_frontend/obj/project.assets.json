@@ -12540,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Administrator\\Desktop\\Hackathon_Optimus\\hackathon_backend\\hackathon backend.csproj",
-      "projectName": "hackathon backend",
-      "projectPath": "c:\\Users\\Administrator\\Desktop\\Hackathon_Optimus\\hackathon_backend\\hackathon backend.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Hackathon_Optimus\\hackathon_frontend\\hackathon_frontend.csproj",
+      "projectName": "hackathon_frontend",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Hackathon_Optimus\\hackathon_frontend\\hackathon_frontend.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Administrator\\Desktop\\Hackathon_Optimus\\hackathon_backend\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\Hackathon_Optimus\\hackathon_frontend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

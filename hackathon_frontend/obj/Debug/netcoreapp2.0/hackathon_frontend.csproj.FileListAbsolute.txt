@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\obj\Debug\netcoreapp2.0\hackathon_frontend.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\obj\Debug\netcoreapp2.0\hackathon_frontend.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\obj\Debug\netcoreapp2.0\hackathon_frontend.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\bin\Debug\netcoreapp2.0\hackathon_frontend.deps.json
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\bin\Debug\netcoreapp2.0\hackathon_frontend.runtimeconfig.json
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\bin\Debug\netcoreapp2.0\hackathon_frontend.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\bin\Debug\netcoreapp2.0\hackathon_frontend.dll
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\bin\Debug\netcoreapp2.0\hackathon_frontend.pdb
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\obj\Debug\netcoreapp2.0\hackathon_frontend.dll
+C:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_frontend\obj\Debug\netcoreapp2.0\hackathon_frontend.pdb

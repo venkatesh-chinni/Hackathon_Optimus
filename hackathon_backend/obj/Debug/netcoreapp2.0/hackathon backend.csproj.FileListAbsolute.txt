@@ -8,3 +8,13 @@ c:\angularhackathon\hackathon backend\bin\Debug\netcoreapp2.0\hackathon backend.
 c:\angularhackathon\hackathon backend\bin\Debug\netcoreapp2.0\hackathon backend.pdb
 c:\angularhackathon\hackathon backend\obj\Debug\netcoreapp2.0\hackathon backend.dll
 c:\angularhackathon\hackathon backend\obj\Debug\netcoreapp2.0\hackathon backend.pdb
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\bin\Debug\netcoreapp2.0\hackathon backend.deps.json
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\bin\Debug\netcoreapp2.0\hackathon backend.runtimeconfig.json
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\bin\Debug\netcoreapp2.0\hackathon backend.runtimeconfig.dev.json
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\bin\Debug\netcoreapp2.0\hackathon backend.dll
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\bin\Debug\netcoreapp2.0\hackathon backend.pdb
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\obj\Debug\netcoreapp2.0\hackathon backend.csproj.CoreCompileInputs.cache
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\obj\Debug\netcoreapp2.0\hackathon backend.AssemblyInfoInputs.cache
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\obj\Debug\netcoreapp2.0\hackathon backend.AssemblyInfo.cs
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\obj\Debug\netcoreapp2.0\hackathon backend.dll
+c:\Users\Administrator\Desktop\Hackathon_Optimus\hackathon_backend\obj\Debug\netcoreapp2.0\hackathon backend.pdb

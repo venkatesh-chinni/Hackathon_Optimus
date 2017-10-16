@@ -14,7 +14,7 @@ export class HackathonService {
   public minutesDisplay = 0;
   public hoursDisplay = 0;
   public secondsDisplay = 0;
-  public score=0;
+  public scores = 0;
   colors;
   shuffle(array: any): void {
     if (this.finish) {
@@ -49,7 +49,7 @@ export class HackathonService {
               this.ticks = t;
               console.log(this.ticks);
               this.colors = this.shuffle(['white', 'red', 'green', 'blue']);
-              if ((this.ticks) <= 90) {
+              if ((this.ticks) <= 20) {
                 this.secondsDisplay = Math.round(this.getSeconds(this.ticks) / 2);
                 console.log(this.secondsDisplay);
                 this.minutesDisplay = this.getMinutes(this.ticks);
@@ -59,6 +59,7 @@ export class HackathonService {
                 this.finish = false;
                 console.log(this.finish);
                 this.change = true;
+                this.sub.unsubscribe();
               }
           }
       );

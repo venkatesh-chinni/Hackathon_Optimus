@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SubmitService } from "./submit.service";
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { SubmitService } from "./submit.service";
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     FormsModule
   ],
   providers: [HackathonService,SubmitService],

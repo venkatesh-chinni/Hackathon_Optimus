@@ -10,12 +10,12 @@ import 'rxjs/Rx';
 
 export class SubmitService{
     constructor(public http: Http){}
-     public baseUrl='localhost:5000/';
+     public baseUrl='http://localhost:5000/api/hackathon';
         submitform(name:string,email:string,location:string,id:number,score:number){
             var headers = new Headers();
             headers.append('Content-Type', 'application/json; charset=utf-8');
-            this.http.post(this.baseUrl+'api/hackathon', JSON.stringify({}), { headers: headers }).subscribe();
-
+            console.log(score);
+            this.http.post(this.baseUrl, JSON.stringify({name:name,email:email,location:location,id:id,score:score}), { headers: headers }).subscribe();
         }
 
 

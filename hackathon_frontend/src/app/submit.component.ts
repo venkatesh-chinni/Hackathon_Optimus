@@ -12,11 +12,13 @@ import { SubmitService } from './submit.service';
 
 export class SubmitComponent{
 
-    constructor(private _submitservice:SubmitService, public _hackathon:HackathonService){}
-    score=this._hackathon.score;
+    constructor(private _submitservice:SubmitService,public _hackathon:HackathonService){}
+    mark : number;
+    ngOnIt(){ this.mark=this._hackathon.scores;
+        console.log(this.mark);}
     submit_data:any[];
-    submitScore(name:string,email:string,location:string,ID:number,score:number){
-        this._submitservice.submitform(name,email,location,ID,score);
+    submitScore(name:string,email:string,location:string,ID:number){
+        this._submitservice.submitform(name,email,location,ID,this._hackathon.scores);
         
     }
 }
