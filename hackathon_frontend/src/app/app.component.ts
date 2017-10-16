@@ -12,7 +12,7 @@ export class AppComponent implements OnInit  {
   sub: Subscription;
   constructor(private hackathon: HackathonService) {}
   colors = this.colors;
-  score = 0;
+  score=0;
   public ticks = 0;
   ngOnInit() {
     this.colors = this.hackathon.shuffle(['white', 'red', 'green', 'blue']);
@@ -23,6 +23,7 @@ export class AppComponent implements OnInit  {
       this.score++;
     }
     console.log(this.score);
+    this.hackathon.score=this.score;
   }
 }
 

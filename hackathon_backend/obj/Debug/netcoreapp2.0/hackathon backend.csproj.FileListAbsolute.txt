@@ -1,0 +1,10 @@
+c:\angularhackathon\hackathon backend\obj\Debug\netcoreapp2.0\hackathon backend.csproj.CoreCompileInputs.cache
+c:\angularhackathon\hackathon backend\obj\Debug\netcoreapp2.0\hackathon backend.AssemblyInfoInputs.cache
+c:\angularhackathon\hackathon backend\obj\Debug\netcoreapp2.0\hackathon backend.AssemblyInfo.cs
+c:\angularhackathon\hackathon backend\bin\Debug\netcoreapp2.0\hackathon backend.deps.json
+c:\angularhackathon\hackathon backend\bin\Debug\netcoreapp2.0\hackathon backend.runtimeconfig.json
+c:\angularhackathon\hackathon backend\bin\Debug\netcoreapp2.0\hackathon backend.runtimeconfig.dev.json
+c:\angularhackathon\hackathon backend\bin\Debug\netcoreapp2.0\hackathon backend.dll
+c:\angularhackathon\hackathon backend\bin\Debug\netcoreapp2.0\hackathon backend.pdb
+c:\angularhackathon\hackathon backend\obj\Debug\netcoreapp2.0\hackathon backend.dll
+c:\angularhackathon\hackathon backend\obj\Debug\netcoreapp2.0\hackathon backend.pdb

@@ -14,6 +14,7 @@ export class HackathonService {
   public minutesDisplay = 0;
   public hoursDisplay = 0;
   public secondsDisplay = 0;
+  public score=0;
   colors;
   shuffle(array: any): void {
     if (this.finish) {
