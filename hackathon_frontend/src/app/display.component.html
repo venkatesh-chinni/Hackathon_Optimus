@@ -1,0 +1,26 @@
+<h1>Scores of different players</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table' *ngIf="forecasts">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Location</th>
+            <th>ID</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let forecast of forecasts">
+            <td>{{ forecast.name }}</td>
+            <td>{{ forecast.email}}</td>
+            <td>{{ forecast.location }}</td>
+            <td>{{ forecast.id }}</td>
+            <td>{{ forecast.score }}</td>
+        </tr>
+    </tbody>
+</table>

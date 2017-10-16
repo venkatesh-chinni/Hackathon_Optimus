@@ -1,6 +1,8 @@
 
     <div class="container-fluid">
-        <button class="btn btn-success" data-target="#loginModal" data-toggle="modal">Submit Score Sheet</button>
+        <button class="btn btn-success"data-target="#loginModal" data-toggle="modal">Submit Score Sheet</button>
+        <button class="btn btn-success" routerLink="/display">View Scores</button>
+        <router-outlet></router-outlet>
         <div class="modal fade" tabindex="1" id="loginModal" data-keyboard="false">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
@@ -35,11 +37,12 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit"  (click)="submitScore(inputname.value,inputemail.value,inputloc.value,inputid.value)"class="btn btn-primary">Submit</button>
+                        <button type="submit" (click)="submitScore(inputname.value,inputemail.value,inputloc.value,inputid.value)"class="btn btn-primary">Submit</button>
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<router-outlet></router-outlet>
   

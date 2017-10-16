@@ -78,7 +78,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -96,14 +96,16 @@ var _a;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__submit_component__ = __webpack_require__("../../../../../src/app/submit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hackathon_service__ = __webpack_require__("../../../../../src/app/hackathon.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__submit_service__ = __webpack_require__("../../../../../src/app/submit.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__display_component__ = __webpack_require__("../../../../../src/app/display.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__submit_component__ = __webpack_require__("../../../../../src/app/submit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__hackathon_service__ = __webpack_require__("../../../../../src/app/hackathon.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__submit_service__ = __webpack_require__("../../../../../src/app/submit.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -118,28 +120,82 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
     return AppModule;
 }());
 AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["L" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["M" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_0__submit_component__["a" /* SubmitComponent */]
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_1__submit_component__["a" /* SubmitComponent */],
+            __WEBPACK_IMPORTED_MODULE_0__display_component__["a" /* DisplayComponent */]
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_7__angular_http__["c" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["a" /* FormsModule */]
+            __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_8__angular_http__["c" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_9__angular_router__["a" /* RouterModule */].forRoot([
+                { path: 'display', component: __WEBPACK_IMPORTED_MODULE_0__display_component__["a" /* DisplayComponent */] }
+            ])
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_1__hackathon_service__["a" /* HackathonService */], __WEBPACK_IMPORTED_MODULE_6__submit_service__["a" /* SubmitService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_2__hackathon_service__["a" /* HackathonService */], __WEBPACK_IMPORTED_MODULE_7__submit_service__["a" /* SubmitService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/display.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Scores of different players</h1>\r\n\r\n<p>This component demonstrates fetching data from the server.</p>\r\n\r\n<p *ngIf=\"!forecasts\"><em>Loading...</em></p>\r\n\r\n<table class='table' *ngIf=\"forecasts\">\r\n    <thead>\r\n        <tr>\r\n            <th>Name</th>\r\n            <th>Email</th>\r\n            <th>Location</th>\r\n            <th>ID</th>\r\n            <th>Score</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let forecast of forecasts\">\r\n            <td>{{ forecast.name }}</td>\r\n            <td>{{ forecast.email}}</td>\r\n            <td>{{ forecast.location }}</td>\r\n            <td>{{ forecast.id }}</td>\r\n            <td>{{ forecast.score }}</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/display.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DisplayComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DisplayComponent = (function () {
+    function DisplayComponent(http) {
+        var _this = this;
+        this.baseUrl = 'http://localhost:5000/api/hackathon';
+        http.get(this.baseUrl).subscribe(function (result) {
+            _this.forecasts = result.json();
+        }, function (error) { return console.error(error); });
+    }
+    return DisplayComponent;
+}());
+DisplayComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
+        selector: 'app-display',
+        template: __webpack_require__("../../../../../src/app/display.component.html")
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], DisplayComponent);
+
+var _a;
+//# sourceMappingURL=display.component.js.map
 
 /***/ }),
 
@@ -202,7 +258,7 @@ var HackathonService = (function () {
             _this.ticks = t;
             console.log(_this.ticks);
             _this.colors = _this.shuffle(['white', 'red', 'green', 'blue']);
-            if ((_this.ticks) <= 20) {
+            if ((_this.ticks) <= 120) {
                 _this.secondsDisplay = Math.round(_this.getSeconds(_this.ticks) / 2);
                 console.log(_this.secondsDisplay);
                 _this.minutesDisplay = _this.getMinutes(_this.ticks);
@@ -232,7 +288,7 @@ var HackathonService = (function () {
     return HackathonService;
 }());
 HackathonService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
     __metadata("design:paramtypes", [])
 ], HackathonService);
 
@@ -243,7 +299,7 @@ HackathonService = __decorate([
 /***/ "../../../../../src/app/submit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n    <div class=\"container-fluid\">\r\n        <button class=\"btn btn-success\" data-target=\"#loginModal\" data-toggle=\"modal\">Submit Score Sheet</button>\r\n        <div class=\"modal fade\" tabindex=\"1\" id=\"loginModal\" data-keyboard=\"false\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">\r\n                &times;\r\n                </button>\r\n                        <br>\r\n                        <br>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        <form>\r\n                                <div class=\"form-group\">\r\n                                    <h2>Your score is {{ _hackathon.scores }}</h2>\r\n                                </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"Name\">NAME</label>\r\n                                <input  #inputname class=\"form-control\" placeholder=\" Enter Name\" type=\"text\" id=\"username\" />\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"email\">EMAIL</label>\r\n                                <input #inputemail class=\"form-control\" placeholder=\"Enter email\" type=\"text\" id=\"email\" />\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"location\">LOCATION</label>\r\n                                <input #inputloc class=\"form-control\" placeholder=\"Select Location\" type=\"text\" id=\"location\" />\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"ID\">ID</label>\r\n                                <input  #inputid class=\"form-control\" placeholder=\"Enter id\" type=\"number\" id=\"ID\" />\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                    <div class=\"modal-footer\">\r\n                        <button type=\"submit\"  (click)=\"submitScore(inputname.value,inputemail.value,inputloc.value,inputid.value)\"class=\"btn btn-primary\">Submit</button>\r\n                        <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Close</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n  "
+module.exports = "\r\n    <div class=\"container-fluid\">\r\n        <button class=\"btn btn-success\"data-target=\"#loginModal\" data-toggle=\"modal\">Submit Score Sheet</button>\r\n        <button class=\"btn btn-success\" routerLink=\"/display\">View Scores</button>\r\n        <router-outlet></router-outlet>\r\n        <div class=\"modal fade\" tabindex=\"1\" id=\"loginModal\" data-keyboard=\"false\">\r\n            <div class=\"modal-dialog modal-sm\">\r\n                <div class=\"modal-content\">\r\n                    <div class=\"modal-header\">\r\n                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">\r\n                &times;\r\n                </button>\r\n                        <br>\r\n                        <br>\r\n                    </div>\r\n                    <div class=\"modal-body\">\r\n                        <form>\r\n                                <div class=\"form-group\">\r\n                                    <h2>Your score is {{ _hackathon.scores }}</h2>\r\n                                </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"Name\">NAME</label>\r\n                                <input  #inputname class=\"form-control\" placeholder=\" Enter Name\" type=\"text\" id=\"username\" />\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"email\">EMAIL</label>\r\n                                <input #inputemail class=\"form-control\" placeholder=\"Enter email\" type=\"email\" id=\"email\" />\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"location\">LOCATION</label>\r\n                                <input #inputloc class=\"form-control\" placeholder=\"Select Location\" type=\"text\" id=\"location\" />\r\n                            </div>\r\n                            <div class=\"form-group\">\r\n                                <label for=\"ID\">ID</label>\r\n                                <input  #inputid class=\"form-control\" placeholder=\"Enter id\" type=\"number\" id=\"ID\" />\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                    <div class=\"modal-footer\">\r\n                        <button type=\"submit\" (click)=\"submitScore(inputname.value,inputemail.value,inputloc.value,inputid.value)\"class=\"btn btn-primary\">Submit</button>\r\n                        <button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Close</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n<router-outlet></router-outlet>\r\n  "
 
 /***/ }),
 
@@ -282,7 +338,7 @@ var SubmitComponent = (function () {
     return SubmitComponent;
 }());
 SubmitComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Component */])({
         selector: 'app-submit-form',
         template: __webpack_require__("../../../../../src/app/submit.component.html")
     }),
@@ -330,7 +386,7 @@ var SubmitService = (function () {
     return SubmitService;
 }());
 SubmitService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], SubmitService);
 
@@ -370,7 +426,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_20" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_23" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
